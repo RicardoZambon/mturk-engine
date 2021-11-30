@@ -12,7 +12,9 @@ class AudioSettings extends React.PureComponent<{}, never> {
           HIT.`}
       >
         <Card>
-          <ToggleAudio />
+          <Card.Section>
+            <ToggleAudio />
+          </Card.Section>
           <Card.Section>
             <EditVolume />
           </Card.Section>

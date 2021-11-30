@@ -51,6 +51,11 @@ export const changeVolume = (value: number): ChangeVolume => ({
   value
 });
 
+export const testAudio = (): PlayAudio => ({
+  type: PLAY_AUDIO,
+  fileSrc: AudioSource.NEW_SEARCH_RESULT
+});
+
 export const toggleAudioEnabled = (): ToggleAudioEnabled => ({
   type: TOGGLE_AUDIO_ENABLED
 });
