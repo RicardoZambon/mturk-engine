@@ -35,15 +35,6 @@ class ToggleAudio extends React.PureComponent<Props & Handlers> {
           </Button>
         </Stack>
       </Stack>
-    //   <SettingToggle
-    //     action={{
-    //       content: ToggleAudio.calculateButtonContent(value),
-    //       onAction: onChange
-    //     }}
-    //     enabled={value}
-    //   >
-    //     Audio is globally {ToggleAudio.calculateBodyContent(value)}.
-    //   </SettingToggle>
     );
   }
 }
