@@ -13,11 +13,24 @@ interface Handlers {
 }
 
 class TestAudio extends React.PureComponent<Props & Handlers, never> {
-  public render() {
-    const { onChange } = this.props;
-    
+	buttonDisabled = false;
+
+	public render() {
+
+    const onChange = () => {
+    	this.buttonDisabled = true;
+			this.forceUpdate();
+
+    	setTimeout(() => {
+    		this.buttonDisabled = false;
+				this.forceUpdate();
+    	}, 2500);
+
+			this.props.onChange();
+		}
+
     return (
-      <Button disabled={!this.props.enabled} onClick={onChange}>
+      <Button disabled={!this.props.enabled || this.buttonDisabled} onClick={onChange}>
         Test audio
       </Button>
     );
