@@ -33,11 +33,6 @@ class QueueItemCard extends React.PureComponent<
     const { hit } = this.props;
     const actions = [
       {
-        content: 'Return',
-        accessibilityLabel: 'Return',
-        onClick: () => this.props.onReturn(hit)
-      },
-      {
         external: true,
         content: 'Work',
         accessibilityLabel: 'Work',
