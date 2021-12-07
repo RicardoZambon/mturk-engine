@@ -1,6 +1,6 @@
 export enum AudioSource {
-  NEW_SEARCH_RESULT = '/sounds/alert.wav',
-  SUCCESSFUL_WATCHER_ACCEPT = '/sounds/alert.wav'
+  NEW_SEARCH_RESULT = 'https://cdn.jsdelivr.net/gh/RicardoZambon/mturk-engine@1.9.0/public/sounds/alert.wav',
+  SUCCESSFUL_WATCHER_ACCEPT = 'https://cdn.jsdelivr.net/gh/RicardoZambon/mturk-engine@1.9.0/public/sounds/alert.wav'
 }
 
 export enum TabIndex {
